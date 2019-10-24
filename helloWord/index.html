@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+</head>
+<body>
+
+  <div id="test"></div>
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="../js/babel.min.js"></script>
+
+  <script type="text/babel">
+    //  创建一个虚拟dom
+    var vDom=<h1>Hello React!</h1>
+    //把虚拟dom渲染到真实的dom上
+    ReactDOM.render(vDom,document.getElementById('test'))
+
+  </script>
+</body>
+</html>
